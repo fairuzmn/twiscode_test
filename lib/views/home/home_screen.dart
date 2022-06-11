@@ -73,7 +73,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   void openCategory() {
     showDialog(
-      // barrierDismissible: false,
+      barrierDismissible: false,
       context: context,
       builder: (_) => DialogCategory(
         namaCtrl: _filterNamaController,
