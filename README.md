@@ -76,7 +76,7 @@
   </tr>
     <td align="left">Download APK</td>
     <td align="center" colspan="2">
-      <a href="https://raw.githubusercontent.com/fairuzmn/twiscode_test/main/qr_link.jpg"/></a>
+      <a href="https://raw.githubusercontent.com/fairuzmn/twiscode_test/main/qr_link.png"/></a>
     </td>
   </tr>
 </tbody>
