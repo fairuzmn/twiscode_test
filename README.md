@@ -1,16 +1,84 @@
-# twistcode
+# Twiscode Test
 
-A new Flutter project.
+## Features :
 
-## Getting Started
+* Home Screen
+* Cart Screen
+* Filter Items
+* Filter Category
+* Skeleton Items
+* Skeleton Image Items
+* Empty Cart Screen
+* No Internet Screen
+* Splash Screen
 
-This project is a starting point for a Flutter application.
+## Notes :
+* All items data is from given API
+* Image items completely random by [Picsum API](https://picsum.photos/600/400)
+* SVG & PNG Assets are from [Undraw](https://undraw.co/)
+* State Management using [Providers](https://pub.dev/packages/provider)
+* Compiled APK can be downloaded at [GDrive](https://drive.google.com/drive/folders/10YCElJf9t4Z9u7ZHPLZpl9bjqC7oDQyy?usp=sharing)  
 
-A few resources to get you started if this is your first Flutter project:
+## Preview
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+<table>
+<tbody>
+  <tr>
+    <td align="left">Main Screen</td>
+    <td align="center">
+      <image alt="" src="https://raw.githubusercontent.com/fairuzmn/twiscode_test/main/screenshots/home_screen.jpg"/>
+    </td>
+    <td align="center">
+      <image alt="" src="https://raw.githubusercontent.com/fairuzmn/twiscode_test/main/screenshots/cart_screen.jpg"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="left">Dialog Layout</td>
+    <td align="center">
+      <image alt="" src="https://raw.githubusercontent.com/fairuzmn/twiscode_test/main/screenshots/filter_dialog.jpg"/>
+    </td>
+    <td align="center">
+      <image alt="" src="https://raw.githubusercontent.com/fairuzmn/twiscode_test/main/screenshots/category_dialog.jpg"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="left">Dialog Layout</td>
+    <td align="center">
+      <image alt="" src="https://raw.githubusercontent.com/fairuzmn/twiscode_test/main/screenshots/filter_dialog.jpg"/>
+    </td>
+    <td align="center">
+      <image alt="" src="https://raw.githubusercontent.com/fairuzmn/twiscode_test/main/screenshots/category_dialog.jpg"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="left">Skeleton</td>
+    <td align="center">
+      <image alt="" src="https://raw.githubusercontent.com/fairuzmn/twiscode_test/main/screenshots/load_data.jpg"/>
+    </td>
+    <td align="center">
+      <image alt="" src="https://raw.githubusercontent.com/fairuzmn/twiscode_test/main/screenshots/load_image.jpg"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="left">Additional</td>
+    <td align="center">
+      <image alt="" src="https://raw.githubusercontent.com/fairuzmn/twiscode_test/main/screenshots/no_cart.jpg"/>
+    </td>
+    <td align="center">
+      <image alt="" src="https://raw.githubusercontent.com/fairuzmn/twiscode_test/main/screenshots/no_internet.jpg"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="left">Splash Screen</td>
+    <td align="center" colspan="2">
+       <image alt="" src="https://raw.githubusercontent.com/fairuzmn/twiscode_test/main/screenshots/splash_screen.jpg"/>
+    </td>
+  </tr>
+    <td align="left">Download APK</td>
+    <td align="center" colspan="2">
+      <a href="https://raw.githubusercontent.com/fairuzmn/twiscode_test/main/qr_link.jpg"/></a>
+    </td>
+  </tr>
+</tbody>
+</table>
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
