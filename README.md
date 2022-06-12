@@ -17,7 +17,8 @@
 * Image items completely random by [Picsum API](https://picsum.photos/600/400)
 * SVG & PNG Assets are from [Undraw](https://undraw.co/)
 * State Management using [Providers](https://pub.dev/packages/provider)
-* Compiled APK can be downloaded at [GDrive](https://drive.google.com/drive/folders/10YCElJf9t4Z9u7ZHPLZpl9bjqC7oDQyy?usp=sharing)  
+* SDK Version 2.10.3 [Download Compiled APK](https://drive.google.com/drive/folders/10YCElJf9t4Z9u7ZHPLZpl9bjqC7oDQyy?usp=sharing) 
+
 
 ## Preview
 
