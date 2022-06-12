@@ -29,10 +29,11 @@ class StoreHeader extends StatelessWidget {
             },
             child: Badge(
               child: Icon(Icons.shopping_cart),
-              badgeContent: GoogleText(
-                text: counter.toString(),
-                color: kWhiteColor,
-              ),
+              // badgeContent: GoogleText(
+              //   text: counter.toString(),
+              //   color: kWhiteColor,
+              // ),
+              badgeContent: Text(counter.toString(), style: TextStyle(color: kWhiteColor)),
               badgeColor: kSecondaryTextColor,
               showBadge: counter > 0,
               animationType: BadgeAnimationType.slide,
