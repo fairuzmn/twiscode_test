@@ -14,7 +14,7 @@
 
 ## Notes :
 * All items data is from given API
-* Image items completely random by [Picsum API](https://picsum.photos/600/400)
+* Image items completely random by [Picsum Photos](https://picsum.photos/)
 * SVG & PNG Assets are from [Undraw](https://undraw.co/)
 * State Management using [Providers](https://pub.dev/packages/provider)
 * SDK Version 2.10.3 [Download Compiled APK](https://drive.google.com/drive/folders/10YCElJf9t4Z9u7ZHPLZpl9bjqC7oDQyy?usp=sharing) 
