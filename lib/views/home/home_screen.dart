@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:provider/provider.dart';
 import 'package:twistcode/apis/store.dart';
 import 'package:twistcode/models/Item.dart';
 import 'package:twistcode/providers/store.dart';
+import 'package:twistcode/utils/colors.dart';
 import 'package:twistcode/utils/size_config.dart';
 import 'package:twistcode/views/home/components/dialog_category.dart';
 import 'package:twistcode/views/home/components/dialog_filter.dart';
@@ -23,6 +25,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   bool isLoading = true;
   bool isError = false;
+  bool isFirst = true;
 
   final TextEditingController _filterNamaController = TextEditingController();
   final TextEditingController _filterMinimumController = TextEditingController();
@@ -48,6 +51,11 @@ class _HomeScreenState extends State<HomeScreen> {
       isLoading = false;
       isError = !isSuccess;
     });
+
+    if (isFirst) {
+      FlutterNativeSplash.remove();
+      setState(() => isFirst = false);
+    }
   }
 
   void addToChart(ItemModel item) {
@@ -107,16 +115,22 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: [
                   StoreHeader(counter: chartCounter, needRefresh: needRefresh),
                   Expanded(
-                    child: SingleChildScrollView(
-                      physics: BouncingScrollPhysics(),
-                      child: StaggeredGrid.count(
-                        crossAxisCount: 2,
-                        children: isLoading
-                            ? List.generate(10, (index) => StoreLoadingSection())
-                            : List.generate(storeProvider.items.length, (index) {
-                                ItemModel item = storeProvider.items[index];
-                                return StoreItem(itemModel: item, onClick: (item) => addToChart(item));
-                              }),
+                    child: RefreshIndicator(
+                      color: kSecondaryColor,
+                      onRefresh: () async {
+                        initData();
+                      },
+                      child: SingleChildScrollView(
+                        physics: BouncingScrollPhysics(),
+                        child: StaggeredGrid.count(
+                          crossAxisCount: 2,
+                          children: isLoading
+                              ? List.generate(10, (index) => StoreLoadingSection())
+                              : List.generate(storeProvider.items.length, (index) {
+                                  ItemModel item = storeProvider.items[index];
+                                  return StoreItem(itemModel: item, onClick: (item) => addToChart(item));
+                                }),
+                        ),
                       ),
                     ),
                   ),
