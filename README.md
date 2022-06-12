@@ -43,15 +43,6 @@
     </td>
   </tr>
   <tr>
-    <td align="left">Dialog Layout</td>
-    <td align="center">
-      <image alt="" src="https://raw.githubusercontent.com/fairuzmn/twiscode_test/main/screenshots/filter_dialog.jpg"/>
-    </td>
-    <td align="center">
-      <image alt="" src="https://raw.githubusercontent.com/fairuzmn/twiscode_test/main/screenshots/category_dialog.jpg"/>
-    </td>
-  </tr>
-  <tr>
     <td align="left">Skeleton</td>
     <td align="center">
       <image alt="" src="https://raw.githubusercontent.com/fairuzmn/twiscode_test/main/screenshots/load_data.jpg"/>
